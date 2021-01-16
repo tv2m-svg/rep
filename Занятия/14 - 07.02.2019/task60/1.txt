@@ -1,0 +1,6 @@
+     Jelli      Джелли     8   29 яблоко
+  Lollipop   Дюшес    12   31 false
+  Lollipop   Коровка    12   31 false
+  Lollipop   Халвичные    12   31 false
+ Chocolate    Spartak    90   32 90
+     Jelli      Пчёлка     8   29 true

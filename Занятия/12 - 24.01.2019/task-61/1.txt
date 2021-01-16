@@ -1,0 +1,7 @@
+    1              Tolstoy                      War&Peace
+    7              Unknown                               
+    1              Tolstoy                      War&Peace
+    1              Tolstoy                      War&Peace
+    3              Tolstoy                           Anna
+7 Пушкин РусланИЛюдмила
+9 Лермонтов Маскарад

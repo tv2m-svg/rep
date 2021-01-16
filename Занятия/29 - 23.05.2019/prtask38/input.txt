@@ -1,0 +1,4 @@
+мая 13, 2019 9:31:34 PM prtask38.Demo main
+SEVERE: null
+java.io.FileNotFoundException: input.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)

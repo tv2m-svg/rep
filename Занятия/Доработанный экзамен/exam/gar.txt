@@ -1,0 +1,6 @@
+      car1   red PETROL leather
+      car2 black PETROL 3 30
+      ford green DIESEL leatherette
+   fordBus  blue PETROL 2 10
+mitsubiBus   red DIESEL 4 40
+ mitsubisi black PETROL leatherette

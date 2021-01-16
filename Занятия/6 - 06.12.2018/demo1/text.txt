@@ -1,0 +1,7 @@
+Alena   Alice 
+alina   albin! 
+Anast!sya 
+ALLA 
+ArinA 
+str1=Helloworld,w!!!
+СБОРКА УСПЕШНО ЗАВЕРШЕНА (общее время: 0 секунд)

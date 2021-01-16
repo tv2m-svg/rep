@@ -1,0 +1,6 @@
+     Jelli      Jelli     8   29 true
+  Lollipop   Marcipan    12   31 false
+  Lollipop   Marcipan    12   31 false
+  Lollipop   Marcipan    12   31 false
+ Chocolate    Spartak    90   32 90
+     Jelli      jelli     8   29 true

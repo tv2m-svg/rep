@@ -1,0 +1,10 @@
+Map<String,Integer> freqs = new TreeMap<>();
+        while (scan.hasNext()) {
+            String word = scan.next();
+            Integer f = freqs.get(word); 
+            if (f==null) {
+                f = 0;   
+            }
+            freqs.put(word, f + 1); 
+        }
+        System.out.println("freqs = " + freqs);

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://codecheck.it/files?repo=bj4cc&problem=ch03/c03_exp_3_105 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="./ClassScheldue_files/download.js.Без названия"></script>
+<script src="./ClassScheldue_files/ace.js.Без названия"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style>
+<script src="./ClassScheldue_files/codecheck.js.Без названия"></script>
+<link type="text/css" rel="stylesheet" href="./ClassScheldue_files/codecheck.css">
+<script src="./ClassScheldue_files/mode-java.js.Без названия"></script><script src="./ClassScheldue_files/theme-chrome.js.Без названия"></script><style id="ace-chrome">.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-chrome */</style></head><body>
+<p>A <code>ClassSchedule</code> class has been designed to represent a class that is scheduled at given days and times. Sometimes class schedule days or times must be changed.  Expand the <code>ClassSchedule</code> class to include methods to allow new values for days, start times and end times</p>
+<pre>   public void setDays(String meetingDays)
+   public void setStartTime(String startTime)
+   public void setEndTime(String endTime)
+</pre>
+
+<form method="post" action="http://codecheck.it/check">
+<p>Complete the following file:</p>
+<div id="ClassSchedule.java" class="file">
+<h3>ClassSchedule.java</h3><div id="ClassSchedule.java-1" name="ClassSchedule.java-1" rows="79" cols="80" class="editor java ace_editor ace-chrome" style="font-size: 1em; height: 1886px;"><div style="position: absolute;"></div><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; left: 81px; top: 1334px; height: 23px; width: 10.5563px;"></textarea><div class="ace_gutter" aria-hidden="true"><div class="ace_layer ace_gutter-layer" style="margin-top: 0px; height: 1915px; width: 61px;"><div class="ace_gutter-cell " style="height: 23px;">1</div><div class="ace_gutter-cell " style="height: 23px;">2</div><div class="ace_gutter-cell " style="height: 23px;">3</div><div class="ace_gutter-cell " style="height: 23px;">4</div><div class="ace_gutter-cell " style="height: 23px;">5</div><div class="ace_gutter-cell " style="height: 23px;">6</div><div class="ace_gutter-cell " style="height: 23px;">7</div><div class="ace_gutter-cell " style="height: 23px;">8</div><div class="ace_gutter-cell " style="height: 23px;">9</div><div class="ace_gutter-cell " style="height: 23px;">10</div><div class="ace_gutter-cell " style="height: 23px;">11</div><div class="ace_gutter-cell " style="height: 23px;">12</div><div class="ace_gutter-cell " style="height: 23px;">13</div><div class="ace_gutter-cell " style="height: 23px;">14</div><div class="ace_gutter-cell " style="height: 23px;">15</div><div class="ace_gutter-cell " style="height: 23px;">16</div><div class="ace_gutter-cell " style="height: 23px;">17</div><div class="ace_gutter-cell " style="height: 23px;">18</div><div class="ace_gutter-cell " style="height: 23px;">19</div><div class="ace_gutter-cell " style="height: 23px;">20</div><div class="ace_gutter-cell " style="height: 23px;">21</div><div class="ace_gutter-cell " style="height: 23px;">22</div><div class="ace_gutter-cell " style="height: 23px;">23</div><div class="ace_gutter-cell " style="height: 23px;">24</div><div class="ace_gutter-cell " style="height: 23px;">25</div><div class="ace_gutter-cell " style="height: 23px;">26</div><div class="ace_gutter-cell " style="height: 23px;">27</div><div class="ace_gutter-cell " style="height: 23px;">28</div><div class="ace_gutter-cell " style="height: 23px;">29</div><div class="ace_gutter-cell " style="height: 23px;">30</div><div class="ace_gutter-cell " style="height: 23px;">31</div><div class="ace_gutter-cell " style="height: 23px;">32</div><div class="ace_gutter-cell " style="height: 23px;">33</div><div class="ace_gutter-cell " style="height: 23px;">34</div><div class="ace_gutter-cell " style="height: 23px;">35</div><div class="ace_gutter-cell " style="height: 23px;">36</div><div class="ace_gutter-cell " style="height: 23px;">37</div><div class="ace_gutter-cell " style="height: 23px;">38</div><div class="ace_gutter-cell " style="height: 23px;">39</div><div class="ace_gutter-cell " style="height: 23px;">40</div><div class="ace_gutter-cell " style="height: 23px;">41</div><div class="ace_gutter-cell " style="height: 23px;">42</div><div class="ace_gutter-cell " style="height: 23px;">43</div><div class="ace_gutter-cell " style="height: 23px;">44</div><div class="ace_gutter-cell " style="height: 23px;">45</div><div class="ace_gutter-cell " style="height: 23px;">46</div><div class="ace_gutter-cell " style="height: 23px;">47</div><div class="ace_gutter-cell " style="height: 23px;">48</div><div class="ace_gutter-cell " style="height: 23px;">49</div><div class="ace_gutter-cell " style="height: 23px;">50</div><div class="ace_gutter-cell " style="height: 23px;">51</div><div class="ace_gutter-cell " style="height: 23px;">52</div><div class="ace_gutter-cell " style="height: 23px;">53</div><div class="ace_gutter-cell " style="height: 23px;">54</div><div class="ace_gutter-cell " style="height: 23px;">55</div><div class="ace_gutter-cell " style="height: 23px;">56</div><div class="ace_gutter-cell " style="height: 23px;">57</div><div class="ace_gutter-cell " style="height: 23px;">58</div><div class="ace_gutter-cell " style="height: 23px;">59</div><div class="ace_gutter-cell " style="height: 23px;">60</div><div class="ace_gutter-cell " style="height: 23px;">61</div><div class="ace_gutter-cell " style="height: 23px;">62</div><div class="ace_gutter-cell " style="height: 23px;">63</div><div class="ace_gutter-cell " style="height: 23px;">64</div><div class="ace_gutter-cell " style="height: 23px;">65</div><div class="ace_gutter-cell " style="height: 23px;">66</div><div class="ace_gutter-cell " style="height: 23px;">67</div><div class="ace_gutter-cell " style="height: 23px;">68</div><div class="ace_gutter-cell " style="height: 23px;">69</div><div class="ace_gutter-cell " style="height: 23px;">70</div><div class="ace_gutter-cell " style="height: 23px;">71</div><div class="ace_gutter-cell " style="height: 23px;">72</div><div class="ace_gutter-cell " style="height: 23px;">73</div><div class="ace_gutter-cell " style="height: 23px;">74</div><div class="ace_gutter-cell " style="height: 23px;">75</div><div class="ace_gutter-cell " style="height: 23px;">76</div><div class="ace_gutter-cell " style="height: 23px;">77</div><div class="ace_gutter-cell " style="height: 23px;">78</div><div class="ace_gutter-cell " style="height: 23px;">79</div><div class="ace_gutter-cell " style="height: 23px;">80</div><div class="ace_gutter-cell " style="height: 23px;">81</div><div class="ace_gutter-cell " style="height: 23px;">82</div></div><div class="ace_gutter-active-line" style="display: none;"></div></div><div class="ace_scroller" style="left: 77px; right: 17px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 1233px; height: 1915px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 848.5px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   A class has a title, time and room</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">*/</span></div><div class="ace_line" style="height:23px"><span class="ace_keyword">public</span> <span class="ace_keyword">class</span> <span class="ace_identifier">ClassSchedule</span></div><div class="ace_line" style="height:23px">{  </div><div class="ace_line" style="height:23px">   <span class="ace_keyword">private</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">title</span>;</div><div class="ace_line" style="height:23px">   <span class="ace_keyword">private</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">days</span>;</div><div class="ace_line" style="height:23px">   <span class="ace_keyword">private</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">startTime</span>;</div><div class="ace_line" style="height:23px">   <span class="ace_keyword">private</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">endTime</span>;</div><div class="ace_line" style="height:23px">   <span class="ace_keyword">private</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">room</span>;</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Constructs a class with title, day, time and room.</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_identifier">ClassSchedule</span>(<span class="ace_support ace_function">String</span> <span class="ace_identifier">classTitle</span>, <span class="ace_support ace_function">String</span> <span class="ace_identifier">meetingDays</span>, <span class="ace_support ace_function">String</span> <span class="ace_identifier">aStartTime</span>, <span class="ace_support ace_function">String</span> <span class="ace_identifier">aEndTime</span>, <span class="ace_support ace_function">String</span> <span class="ace_identifier">classRoom</span>)</div><div class="ace_line" style="height:23px">   {   </div><div class="ace_line" style="height:23px">     <span class="ace_identifier">title</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">classTitle</span>;</div><div class="ace_line" style="height:23px">     <span class="ace_identifier">days</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">meetingDays</span>;</div><div class="ace_line" style="height:23px">     <span class="ace_identifier">startTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">aStartTime</span>;</div><div class="ace_line" style="height:23px">     <span class="ace_identifier">endTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">aEndTime</span>;</div><div class="ace_line" style="height:23px">     <span class="ace_identifier">room</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">classRoom</span>;</div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Gets the title.</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      </span><span class="ace_comment ace_doc ace_tag">@return</span><span class="ace_comment ace_doc"> the title</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">getTitle</span>()</div><div class="ace_line" style="height:23px">   {   </div><div class="ace_line" style="height:23px">      <span class="ace_keyword">return</span> <span class="ace_identifier">title</span>;</div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Gets the time in the form "days start time-end time"</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      </span><span class="ace_comment ace_doc ace_tag">@return</span><span class="ace_comment ace_doc"> the time</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">getTime</span>()</div><div class="ace_line" style="height:23px">   {   </div><div class="ace_line" style="height:23px">      <span class="ace_support ace_function">String</span> <span class="ace_identifier">time</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">days</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_string">" "</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_identifier">startTime</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_string">"-"</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_identifier">endTime</span>;</div><div class="ace_line" style="height:23px">      <span class="ace_keyword">return</span> <span class="ace_identifier">time</span>;</div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Gets the room.</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      </span><span class="ace_comment ace_doc ace_tag">@return</span><span class="ace_comment ace_doc"> the room</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_support ace_function">String</span> <span class="ace_identifier">getRoom</span>()</div><div class="ace_line" style="height:23px">   {   </div><div class="ace_line" style="height:23px">      <span class="ace_keyword">return</span> <span class="ace_identifier">room</span>;</div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Sets the days.</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      </span><span class="ace_comment ace_doc ace_tag">@param</span><span class="ace_comment ace_doc"> meetingDays the new meeting days</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_keyword">void</span> <span class="ace_identifier">setDays</span>(<span class="ace_support ace_function">String</span> <span class="ace_identifier">meetingDays</span>)</div><div class="ace_line" style="height:23px">   {   </div><div class="ace_line" style="height:23px">      <span class="ace_keyword">this</span>.<span class="ace_identifier">days</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">meetingDays</span>;</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Sets the start time.</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      </span><span class="ace_comment ace_doc ace_tag">@param</span><span class="ace_comment ace_doc"> aStartTime the new start time</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_keyword">void</span> <span class="ace_identifier">setStartTime</span>(<span class="ace_support ace_function">String</span> <span class="ace_identifier">aStartTime</span>)</div><div class="ace_line" style="height:23px">   {   </div><div class="ace_line" style="height:23px">      <span class="ace_keyword">this</span>.<span class="ace_identifier">startTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">aStartTime</span>;</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_comment ace_doc">/**</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      Sets the end time.</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">      </span><span class="ace_comment ace_doc ace_tag">@param</span><span class="ace_comment ace_doc"> anEndTime the new end time</span></div><div class="ace_line" style="height:23px"><span class="ace_comment ace_doc">   */</span></div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">   <span class="ace_keyword">public</span> <span class="ace_keyword">void</span> <span class="ace_identifier">setEndTime</span>(<span class="ace_support ace_function">String</span> <span class="ace_identifier">endTime</span>)</div><div class="ace_line" style="height:23px">   {</div><div class="ace_line" style="height:23px">      <span class="ace_keyword">this</span>.<span class="ace_identifier">endTime</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">endTime</span>;</div><div class="ace_line" style="height:23px">   }</div><div class="ace_line" style="height:23px"></div><div class="ace_line" style="height:23px">}</div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 1334px; width: 10.5563px; height: 23px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 22px; bottom: 17px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 1886px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 22px; left: 77px; right: 17px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 1233px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+</div>
+<div><input id="submit" type="submit">
+<input type="hidden" name="repo" value="bj4cc">
+<input type="hidden" name="problem" value="ch03/c03_exp_3_105">
+
+<div id="codecheck-submit-response"><!--?xml version="1.0" encoding="utf-8"?-->
+
+
+
+
+<meta name="Submission" content="/tmp/codecheck/19032116408668976320406056050">
+<meta name="Time" content="2019-03-21T16:40:22Z">
+<meta name="ID" content="ClassSchedule">
+<meta name="User" content="19032116253x67smoc38i3qg441mk29t3oj">
+<meta name="Problem" content="bj4cc/ch03/c03_exp_3_105">
+<meta name="Elapsed" content="1193 ms">
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+.note {color: blue; font-weight: bold;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+
+
+<p class="header tester">Testers</p>
+<div class="tester">
+<p class="item">Running ClassScheduleTester.java</p>
+<span class="pass">pass </span><span class="pass">pass </span><pre class="output">Intro to Java meets MWF 11:00-11:50 in Turing 101
+<span class="pass">Expected: Intro to Java meets MWF 11:00-11:50 in Turing 101</span>
+Operating Systems meets MW 2:00-3:15 in Turing 307
+<span class="pass">Expected: Operating Systems meets MW 2:00-3:15 in Turing 307</span>
+</pre>
+</div>
+<p class="header studentFiles">Submitted files</p>
+<div class="studentFiles">
+<p class="caption">ClassSchedule.java:</p>
+<table class="file"><tbody><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+<span class="linenumber"> 32</span>
+<span class="linenumber"> 33</span>
+<span class="linenumber"> 34</span>
+<span class="linenumber"> 35</span>
+<span class="linenumber"> 36</span>
+<span class="linenumber"> 37</span>
+<span class="linenumber"> 38</span>
+<span class="linenumber"> 39</span>
+<span class="linenumber"> 40</span>
+<span class="linenumber"> 41</span>
+<span class="linenumber"> 42</span>
+<span class="linenumber"> 43</span>
+<span class="linenumber"> 44</span>
+<span class="linenumber"> 45</span>
+<span class="linenumber"> 46</span>
+<span class="linenumber"> 47</span>
+<span class="linenumber"> 48</span>
+<span class="linenumber"> 49</span>
+<span class="linenumber"> 50</span>
+<span class="linenumber"> 51</span>
+<span class="linenumber"> 52</span>
+<span class="linenumber"> 53</span>
+<span class="linenumber"> 54</span>
+<span class="linenumber"> 55</span>
+<span class="linenumber"> 56</span>
+<span class="linenumber"> 57</span>
+<span class="linenumber"> 58</span>
+<span class="linenumber"> 59</span>
+<span class="linenumber"> 60</span>
+<span class="linenumber"> 61</span>
+<span class="linenumber"> 62</span>
+<span class="linenumber"> 63</span>
+<span class="linenumber"> 64</span>
+<span class="linenumber"> 65</span>
+<span class="linenumber"> 66</span>
+<span class="linenumber"> 67</span>
+<span class="linenumber"> 68</span>
+<span class="linenumber"> 69</span>
+<span class="linenumber"> 70</span>
+<span class="linenumber"> 71</span>
+<span class="linenumber"> 72</span>
+<span class="linenumber"> 73</span>
+<span class="linenumber"> 74</span>
+<span class="linenumber"> 75</span>
+<span class="linenumber"> 76</span>
+<span class="linenumber"> 77</span>
+<span class="linenumber"> 78</span>
+<span class="linenumber"> 79</span>
+<span class="linenumber"> 80</span>
+<span class="linenumber"> 81</span>
+<span class="linenumber"> 82</span>
+</pre></td><td><pre>/**
+   A class has a title, time and room
+*/
+public class ClassSchedule
+{  
+   private String title;
+   private String days;
+   private String startTime;
+   private String endTime;
+   private String room;
+
+   /**
+      Constructs a class with title, day, time and room.
+   */
+   public ClassSchedule(String classTitle, String meetingDays, String aStartTime, String aEndTime, String classRoom)
+   {   
+     title = classTitle;
+     days = meetingDays;
+     startTime = aStartTime;
+     endTime = aEndTime;
+     room = classRoom;
+   }
+
+   /**
+      Gets the title.
+      @return the title
+   */
+   public String getTitle()
+   {   
+      return title;
+   }
+
+   /**
+      Gets the time in the form "days start time-end time"
+      @return the time
+   */
+   public String getTime()
+   {   
+      String time = days + " " + startTime + "-" + endTime;
+      return time;
+   }
+
+   /**
+      Gets the room.
+      @return the room
+   */
+   public String getRoom()
+   {   
+      return room;
+   }
+
+   /**
+      Sets the days.
+      @param meetingDays the new meeting days
+   */
+   public void setDays(String meetingDays)
+   {   
+      this.days = meetingDays;
+
+   }
+
+   /**
+      Sets the start time.
+      @param aStartTime the new start time
+   */
+   public void setStartTime(String aStartTime)
+   {   
+      this.startTime = aStartTime;
+
+   }
+
+   /**
+      Sets the end time.
+      @param anEndTime the new end time
+   */
+
+   public void setEndTime(String endTime)
+   {
+      this.endTime = endTime;
+   }
+
+}
+</pre></td></tr></tbody></table>
+</div>
+<p class="header providedFiles">Provided files</p>
+<div class="providedFiles">
+<p class="caption">ClassScheduleTester.java:</p>
+<table class="file"><tbody><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+</pre></td><td><pre>public class ClassScheduleTester
+{
+   public static void main(String[] args)
+   {
+      ClassSchedule class1 = new ClassSchedule("Intro to Java","MWF","9:00", "9:50","Turing 101");
+      class1.setStartTime("11:00");
+      class1.setEndTime("11:50");
+       
+      System.out.println(class1.getTitle() +
+         " meets " + class1.getTime() + " in " + class1.getRoom() );
+      System.out.println("Expected: Intro to Java meets MWF 11:00-11:50 in Turing 101");
+                
+      ClassSchedule class2 = new ClassSchedule("Operating Systems","TT","12:30","1:45","Turing 307"); 
+      class2.setDays("MW");
+      class2.setStartTime("2:00");
+      class2.setEndTime("3:15");
+       
+      System.out.println(class2.getTitle() +
+         " meets " + class2.getTime() + " in " + class2.getRoom() );
+      System.out.println("Expected: Operating Systems meets MW 2:00-3:15 in Turing 307");
+   }
+}
+</pre></td></tr></tbody></table>
+</div>
+<p class="header score">Score</p>
+<div class="score">
+<p class="score">2/2</p>
+</div>
+<div class="footnotes"><div class="footnote">2019-03-21T16:40:22Z</div>
+</div>
+
+<div class="download"><button onclick="download(&#39;data:application/octet-stream;base64,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&#39;, &#39;ClassSchedule.signed.zip&#39;, &#39;application/octet-stream&#39;)">Download Report</button></div></div>
+<p>Use the following file:</p>
+<p>ClassScheduleTester.java</p>
+<pre>public class ClassScheduleTester
+{
+   public static void main(String[] args)
+   {
+      ClassSchedule class1 = new ClassSchedule("Intro to Java","MWF","9:00", "9:50","Turing 101");
+      class1.setStartTime("11:00");
+      class1.setEndTime("11:50");
+       
+      System.out.println(class1.getTitle() +
+         " meets " + class1.getTime() + " in " + class1.getRoom() );
+      System.out.println("Expected: Intro to Java meets MWF 11:00-11:50 in Turing 101");
+                
+      ClassSchedule class2 = new ClassSchedule("Operating Systems","TT","12:30","1:45","Turing 307"); 
+      class2.setDays("MW");
+      class2.setStartTime("2:00");
+      class2.setEndTime("3:15");
+       
+      System.out.println(class2.getTitle() +
+         " meets " + class2.getTime() + " in " + class2.getRoom() );
+      System.out.println("Expected: Operating Systems meets MW 2:00-3:15 in Turing 307");
+   }
+}
+</pre></div></form></body></html>

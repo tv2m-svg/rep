@@ -1,0 +1,6 @@
+Ivan BGUIR 7,9 2
+Petr BGU 8,9 1
+Oleg BGUIR 7,5 3
+Ivan BGUIR 7,8 2
+Ivan BGUIR 7,9 2
+Ivan BGU 7,9 2
